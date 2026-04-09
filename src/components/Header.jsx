@@ -14,7 +14,7 @@ export default function Header({ toggleSidebar }) {
         </button>
         <div>
           <h2 className="text-xl font-bold text-gray-800 flex items-center gap-2">
-            Welcome back, RR BROTHERS <span className="text-2xl">👋</span>
+            Welcome back, Zac Hudson <span className="text-2xl">👋</span>
           </h2>
           <p className="text-sm text-gray-500 hidden sm:block">Here's your delivery platform report for today.</p>
         </div>
@@ -43,11 +43,11 @@ export default function Header({ toggleSidebar }) {
 
         {/* Profile Dropdown */}
         <div className="flex items-center cursor-pointer group">
-          <div className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold mr-3 border border-primary/10">
-            RR
+          <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden mr-3">
+            <img src="https://i.pravatar.cc/100?img=11" alt="Profile" className="h-full w-full object-cover" />
           </div>
           <div className="hidden sm:block text-right mr-2">
-            <p className="text-sm font-semibold text-gray-800">RR BROTHERS</p>
+            <p className="text-sm font-semibold text-gray-800">Zac Hudson</p>
             <p className="text-xs text-gray-500">Super Admin</p>
           </div>
           <ChevronDown className="h-4 w-4 text-gray-400 group-hover:text-primary transition-colors" />

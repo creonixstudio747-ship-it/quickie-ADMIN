@@ -40,9 +40,9 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
       >
         <div className="h-full flex flex-col">
           {/* Logo Area */}
-          <div className="h-16 flex items-center justify-center border-b border-gray-100">
-            <h1 className="text-2xl font-bold tracking-widest text-gray-900 uppercase">
-              QUICKIE
+          <div className="h-16 flex items-center justify-center border-b border-gray-100 mt-2 pb-2">
+            <h1 className="text-4xl italic tracking-tight text-primary font-serif flex items-center">
+              Crispy
             </h1>
           </div>
           
