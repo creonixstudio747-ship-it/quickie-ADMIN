@@ -34,15 +34,15 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
       )}
       
       <aside 
-        className={`fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-gray-200 transform transition-transform duration-300 ease-in-out lg:static lg:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 z-50 w-64 bg-white border-r-[3px] border-[#C08B3E] transform transition-transform duration-300 ease-in-out lg:static lg:translate-x-0 ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
         <div className="h-full flex flex-col">
           {/* Logo Area */}
-          <div className="h-16 flex items-center justify-center border-b border-gray-100 mt-2 pb-2">
-            <h1 className="text-4xl italic tracking-tight text-primary font-serif flex items-center">
-              Crispy
+          <div className="h-20 flex items-center justify-center mt-4 pb-2">
+            <h1 className="text-4xl italic tracking-tight text-[#C08B3E] font-serif font-bold flex items-center">
+              QUICKIE
             </h1>
           </div>
           
@@ -58,13 +58,13 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                   to={item.path}
                   className={`flex items-center px-4 py-3 text-sm font-medium rounded-xl transition-all duration-200 group ${
                     isActive 
-                      ? 'bg-primary/10 text-primary' 
-                      : 'text-gray-600 hover:bg-gray-50 hover:text-primary'
+                      ? 'bg-[#C08B3E] text-white shadow-md' 
+                      : 'text-gray-600 hover:bg-gray-50 hover:text-[#C08B3E]'
                   }`}
                 >
                   <Icon 
                     className={`mr-3 h-5 w-5 transition-colors ${
-                      isActive ? 'text-primary' : 'text-gray-400 group-hover:text-primary'
+                      isActive ? 'text-white' : 'text-gray-400 group-hover:text-[#C08B3E]'
                     }`} 
                   />
                   {item.name}

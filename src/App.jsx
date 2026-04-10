@@ -11,6 +11,11 @@ import DeliveryManList from './pages/DeliveryManList';
 import AddDeliveryMan from './pages/AddDeliveryMan';
 import ViewDeliveryMan from './pages/ViewDeliveryMan';
 import EditDeliveryMan from './pages/EditDeliveryMan';
+import OrdersList from './pages/OrdersList';
+import OrderDetails from './pages/OrderDetails';
+import SettingsList from './pages/SettingsList';
+import BusinessInfo from './pages/BusinessInfo';
+import GeneralInfo from './pages/GeneralInfo';
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -33,6 +38,11 @@ function App() {
           <Route path="delivery-man/add" element={<AddDeliveryMan />} />
           <Route path="delivery-man/view/:id" element={<ViewDeliveryMan />} />
           <Route path="delivery-man/edit/:id" element={<EditDeliveryMan />} />
+          <Route path="orders" element={<OrdersList />} />
+          <Route path="orders/view/:id" element={<OrderDetails />} />
+          <Route path="settings" element={<SettingsList />} />
+          <Route path="settings/business" element={<BusinessInfo />} />
+          <Route path="settings/general" element={<GeneralInfo />} />
         </Route>
 
         <Route path="*" element={<Navigate to="/login" replace />} />
